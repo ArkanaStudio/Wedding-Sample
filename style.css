@@ -157,7 +157,7 @@ body {
     color: var(--paragraf);
 }
 
-.home p {
+.home p, .penutup {
     font-size: .9rem;
     font-family: 'playfair display';
 }
@@ -186,6 +186,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(60px);
+    z-index: 5;
 
 }
 
@@ -296,6 +297,17 @@ body {
     padding-bottom: 5rem;
     background-color: var(--background-gray);
 }
+
+.gallery .doa-arrum h3 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.gallery .doa-arrum p {
+    font-family: 'playfair display';
+    color: var(--paragraf);
+    font-size: 1rem;
+}
 /* <<<<<<<< Gallery Section Finish >>>>>>>> */
 
 /* <<<<<<<< RSVP Section Start >>>>>>>> */
@@ -306,6 +318,7 @@ body {
 }
 
 .rsvp p {
+    font-family: 'playfair display';
     color: white;
 }
 
@@ -330,6 +343,24 @@ body {
 .gifts {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.ucapan p {
+    color: var(--paragraf);
+}
+
+.ucapan .penutup {
+    font-weight: semibold;
+}
+
+.ucapan .terimakasih {
+    color: var(--paragraf);
+}
+
+.ucapan h4 {
+    color: var(--primary);
+    font-family: 'dancing script';
+    
 }
 /* <<<<<<<< Gifts Section Finish >>>>>>>> */
 
@@ -637,6 +668,18 @@ footer li {
         border-top: 1px solid #999999;
         font-size: .8rem;
     }
+
+    /* Gallery section */
+    .gallery .doa-arrum h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.gallery .doa-arrum p {
+    font-family: 'playfair display';
+    color: var(--paragraf);
+    font-size: .8rem;
+}
 
 
 
