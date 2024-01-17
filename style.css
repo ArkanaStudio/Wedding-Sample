@@ -1,0 +1,675 @@
+:root {
+    --primary : #d9b504;
+    --primary-light : #f3e8b1;
+    --primary-dark : #c3a304;
+
+    --secondary: #960018;
+    --secondary-light: #deb0b7;
+    --secondary-dark: #710012;
+
+    --background: #2b270d;
+    --background-gray: #eaeae7;
+    --paragraf: #8d8d8d;
+    --heading: #302b0e;
+
+    --gradient: linear-gradient(135deg,#d9b504,#f3e8b1);
+
+    --shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'open sans', sans-serif;
+    min-height: 5000px;
+}
+
+/* <<<<<<<< Main Section Start >>>>>>>> */
+.hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Background/Background-1.jpg); 
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    z-index: -1;
+    opacity: 55%;
+}
+
+.hero h1 , .hero h3 , .hero h4 {
+    text-shadow: var(--shadow);
+}
+
+.hero h3 {
+    font-size: 1.8rem;
+}
+
+.hero h1 {
+    font-family: 'dancing script', cursive;
+    font-size: 6rem;
+    color: var(--primary);
+}
+
+.hero h4 {
+    font-size: 1.3rem;
+
+}
+
+.hero a {
+    color: var(--primary-dark);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+.hero a .icons {
+    font-size: 1.4rem;
+}
+/* <<<<<<<< Main Section Finish >>>>>>>> */
+
+
+/* <<<<<<<< Navbar Section Start >>>>>>>> */
+.mynavbar {
+    background-color: rgba(255, 255, 255, .1) !important;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'dancing script',cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    color: var(--paragraf);
+}
+
+.mynavbar .navbar-toggler {
+    color: var(--primary);
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    mix-blend-mode: difference;
+    color: var(--primary) impot !important;
+}
+/* <<<<<<<< Navbar Section Finish >>>>>>>> */
+
+/* <<<<<<<< Home Section Start >>>>>>>> */
+.home {
+    background-image: url(img/BG-2/homebackground-2-01.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -4.3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+    color: var(--primary);
+    font-family: 'dancing script';
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.home h3 {
+    color: var(--primary);
+    font-size: 2.6rem;
+}
+
+.home h4 {
+    font-size: 1.2rem;
+    font-family: 'playfair display';
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--paragraf);
+}
+
+.home p {
+    font-size: .9rem;
+    font-family: 'playfair display';
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.couple p {
+    font-size: 1rem;
+}
+
+.home .couple h3 {
+    font-family: 'courgette';
+    font-size: 2.4rem;
+    color: var(--primary);
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(60px);
+
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--primary);
+}
+/* <<<<<<<< Home Section Finish >>>>>>>> */
+
+/* <<<<<<<< Informasi Section Start >>>>>>>> */
+.info {
+    background-color: #0a0a0a;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.info .alamat {
+    font-size: .8rem;
+    font-family: 'playfair display';
+}
+
+.info .description {
+    font-size: .9rem;
+    font-family: 'playfair display';
+    font-weight: 300;
+    color: var(--paragraf);
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: white !important;
+    border: 1px solid #999999;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999999;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.info .card-footer {
+    border-top: 1px solid #999999;
+    font-size: .9rem;
+}
+/* <<<<<<<< Informasi Section Finish >>>>>>>> */
+
+/* <<<<<<<< Story Section Start >>>>>>>> */
+.story {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/BG-2/Bckground\ story-01.png); 
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+    text-transform: uppercase;
+    font-family: 'playfair display';
+    color: var(--paragraf);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.card-story h5 {
+    font-size: 1.5rem;
+    font-family: 'courgette';
+}
+
+.card-story .card-text {
+    font-size: .9rem;
+    color: var(--paragraf);
+    font-family: 'playfair display';
+}
+/* <<<<<<<< Story Section Finish >>>>>>>> */
+
+/* <<<<<<<< Gallery Section Start >>>>>>>> */
+.gallery {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--background-gray);
+}
+/* <<<<<<<< Gallery Section Finish >>>>>>>> */
+
+/* <<<<<<<< RSVP Section Start >>>>>>>> */
+.rsvp {
+    background-color: #0a0a0a;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.rsvp p {
+    color: white;
+}
+
+.rsvp form label {
+    color: white;
+}
+
+.rsvp button {
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: var(--primary);
+    border: 1px solid white;
+}
+/* <<<<<<<< RSVP Section Finish >>>>>>>> */
+
+/* <<<<<<<< Gifts Section Start >>>>>>>> */
+.gifts {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+/* <<<<<<<< Gifts Section Finish >>>>>>>> */
+
+/* <<<<<<<< Footer Section Start >>>>>>>> */
+footer {
+    padding-top: .5rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+}
+/* <<<<<<<< Footer Section Finish >>>>>>>> */
+
+/* <<<<<<<< Audio Section Start >>>>>>>> */
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+    
+}
+/* <<<<<<<< Audio Section Finish >>>>>>>> */
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<< MEDIA QUERRY RESPONSIVE >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<< Dekstop Responsive >>>>>>>>>> */
+@media(max-width: 1200px) {
+
+    /* Home Section */
+    .home .heart {
+        transform: translateX(-50%) translateY(50px);
+    }
+
+    /* simply countdown */
+    .simply-countdown > .simply-section {
+        padding: 50px;
+    }
+}
+
+/* <<<<<<<<< Laptop Responsive >>>>>>>>>> */
+@media(max-width: 992px) {
+
+    /* home section */
+    .home h2,
+    .info h2,
+    .story h2,
+    .gallery h2,
+    .rsvp h2,
+    .gifts h2 {
+        font-size: 4.2rem;
+    }
+
+    .home h3 {
+        font-size: 2.3rem;
+    }
+
+    .home h4 {
+        font-size: 1rem;
+        font-family: 'playfair display';
+        letter-spacing: 1px;
+        font-style: italic;
+        color: var(--paragraf);
+    }
+
+    .home p {
+        font-size: .8rem;
+        font-family: 'playfair display';
+    }
+
+    .home .heart {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(150px);
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 40px;
+    }
+}
+
+/* <<<<<<<<< tablet Responsive >>>>>>>>>> */
+@media(max-width: 767px) {
+
+    /* hero image */
+    .hero h3 {
+        font-size: 1.4rem;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+    }
+
+    /* Home Section */
+    .home h2,
+    .story h2,
+    .info h2,
+    .gallery h2,
+    .rsvp h2,
+    .gifts h2 {
+        font-size: 3.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.8rem;
+    }
+
+    .home h4 {
+        font-size: 1rem;
+        font-family: 'playfair display';
+        letter-spacing: 1px;
+        font-style: italic;
+        color: var(--paragraf);
+    }
+
+    .home p {
+        font-size: .8rem;
+        font-family: 'playfair display';
+    }
+
+    /* .home .heart {
+        display: none;
+    } */
+
+    .home .heart {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(280px);
+    }
+
+    /* Informasi section */
+    .info .card-footer {
+        border-top: 1px solid #999999;
+        font-size: .9rem;
+    }
+
+    /* simply countdown */
+    .simply-countdown > .simply-section {
+        padding: 35px;
+        border-radius: 8px;
+        margin: 8px;
+    }
+}
+
+/* <<<<<<<<< Mobile Responsive >>>>>>>>>> */
+@media(max-width: 576px) {
+
+
+    /* Hero Image */
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 3.1rem;
+    }
+
+    .hero h4 {
+        font-size: .9rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+    }
+
+    /* Home Section */
+    .home h2,
+    .info h2,
+    .story h2,
+    .gallery h2,
+    .rsvp h2,
+    .gifts h2 {
+        font-size: 2.6rem;
+    }
+
+    .home h3 {
+        font-size: 1.8rem;
+    }
+
+    .home h4 {
+        font-size: 1rem;
+        font-family: 'playfair display';
+        letter-spacing: 1px;
+        font-style: italic;
+        color: var(--paragraf);
+    }
+
+    .home p {
+        font-size: .8rem;
+        font-family: 'playfair display';
+    }
+
+    .home .couple {
+        margin-top: 100px;
+    }
+
+    .couple p {
+        font-size: .8rem;
+    }
+
+    .home .couple h3 {
+        font-family: 'courgette';
+        font-size: 2.2rem;
+        color: var(--primary);
+    }
+
+    .home .heart {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(310px);
+    }
+
+    /* Informasi section */
+    .info .alamat {
+        font-size: .8rem;
+        font-family: 'playfair display';
+    }
+    
+    .info .description {
+        font-size: .9rem;
+        font-family: 'playfair display';
+        font-weight: 300;
+        color: var(--paragraf);
+    }
+    
+    .info .card {
+        background-color: rgba(255, 255, 255, .2) !important;
+        color: white !important;
+        border: 1px solid #999999;
+    }
+    
+    .info .card-header {
+        border-bottom: 1px solid #999999;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    
+    .info .card-body {
+        font-size: 1rem;
+    }
+    
+    .info .card-footer {
+        border-top: 1px solid #999999;
+        font-size: .8rem;
+    }
+
+
+
+    /* simply countdown */
+    .simply-countdown > .simply-section {
+        width: 40px;
+        height: 40px;
+        padding: 25px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 1rem;
+    }
+
+    .simply-countdown > .simply-section .simply-word {
+        font-size: .8rem;
+    }
+}
+
+
+
+/* ///////Mobile small///// */
+@media (max-width: 390px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(300px);
+    }
+}
+
+@media (max-width: 360px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(290px);
+    }
+}
+
