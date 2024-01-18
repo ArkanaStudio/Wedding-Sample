@@ -342,7 +342,7 @@ body {
 /* <<<<<<<< Gifts Section Start >>>>>>>> */
 .gifts {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .ucapan p {
@@ -369,6 +369,7 @@ footer {
     padding-top: .5rem;
     background-color: var(--primary);
     color: white;
+    font-family: 'work sans';
 }
 
 footer a {
@@ -675,10 +676,10 @@ footer li {
     color: var(--primary);
 }
 
-.gallery .doa-arrum p {
-    font-family: 'playfair display';
-    color: var(--paragraf);
-    font-size: .8rem;
+    .gallery .doa-arrum p {
+        font-family: 'playfair display';
+        color: var(--paragraf);
+        font-size: .8rem;
 }
 
 
